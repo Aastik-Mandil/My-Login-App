@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/holo_orange_light"
+    android:padding="10dp"
+    tools:context=".Register">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="User Sign Up"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="50dp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Name"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editName"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_marginTop="5dp"
+        android:id="@+id/editEmail"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:textColor="@android:color/holo_green_light"
+        android:layout_marginTop="5dp"
+        android:id="@+id/editPassword"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="SIGN UP" />
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="15dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="LOGIN" />
+</LinearLayout>
